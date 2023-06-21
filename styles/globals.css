@@ -1,0 +1,2046 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@layer components{
+ 
+  .mobileDisplay{
+    @apply 
+    hidden 
+    lg:flex
+  }
+
+  .bannerDiv{
+    @apply
+    h-[520px]
+    w-full
+    mx-auto
+    flex
+    items-center
+    space-x-4
+    bg-mm-lakes
+    bg-center
+    bg-no-repeat
+    hover:opacity-90
+    transform
+    transition
+    ease-in-out
+    duration-[300]
+    lg:px-8
+    md:px-5
+    px-4
+    py-3
+  }
+
+  .inputDiv{
+    @apply
+    bg-slate-50
+    rounded-3xl
+    lg:w-[490px]
+    md:w-[350px]
+    lg:flex
+    hidden
+    h-[60px]
+    px-2
+    shadow-md
+    hover:shadow-xl
+    hover:shadow-slate-300
+    transform
+    transition
+    duration-300
+    ease-out
+  }
+
+  .productDiv{
+    @apply
+    bg-blue-200
+    h-[350px] 
+    px-8
+    py-10
+    space-y-2
+    lg:max-w-[420px]
+    md:max-w-[370px]
+    max-w-[310px]
+    lg:min-w-[390px]
+    md:min-w-[340px]
+    min-w-[310px]
+    flex-grow
+    rounded-lg 
+    bg-cover
+    bg-no-repeat 
+    bg-center 
+    grid 
+    place-items-start
+    cursor-pointer
+    hover:opacity-95
+    hover:scale-105
+    hover:shadow-xl
+    hover:shadow-red-700
+    transform
+    transition
+    duration-300
+    ease-in-out
+    
+  }
+
+  .secondBannerDiv{
+    @apply
+    h-[420px]
+    w-full
+    mx-auto
+    flex
+    items-center
+    space-x-4
+    bg-feudal
+    bg-center
+    bg-no-repeat
+    hover:opacity-90
+    transform
+    transition
+    ease-in-out
+    duration-[300]
+    lg:px-8
+    md:px-5
+    px-4
+    py-3
+  }
+
+  .newsDiv{
+    @apply
+    overflow-x-scroll
+    scrollbar-hide 
+    flex
+    items-center
+    space-x-24
+    bg-slate-600
+    bg-opacity-20
+    sm:h-1/2
+    h-5/6
+    opacity-90
+    max-w-[90%]
+    mx-auto
+    shadow-lg
+    rounded-lg
+  }
+
+  .invInput{
+    @apply
+    place-self-center
+    px-8
+    py-5
+    m-4
+    bg-slate-400
+    flex
+    items-center
+    h-[60px]
+    w-full
+    rounded-lg
+    shadow-md
+    active:shadow-lg
+    focus:shadow-xl
+    focus:bg-slate-500
+    transform
+    transition
+    duration-300
+    ease-in-out
+  }
+
+  .headerBtns{
+    @apply
+    px-4
+        rounded-lg
+        hover:scale-105
+        hover:animate-pulse
+        hover:shadow-lg
+        transform
+        transition
+        duration-500
+        ease-in-out
+  }
+
+/*apod div and components*/
+.newsDivMob{
+  @apply
+  lg:hidden
+  h-[510px]
+  max-w-[90%]
+  min-w-[80%]
+  mx-auto
+  flex
+  items-center
+  space-x-14
+  overflow-x-scroll
+  scrollbar-thin
+  scrollbar-track-slate-600
+  scrollbar-thumb-sky-600
+  px-8
+  rounded-xl
+  bg-gradient-to-br
+  from-[#03045e]
+  to-[#0077b6]
+}
+
+.newsDivLg{
+  @apply
+  max-w-[70%]
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-track-sky-700
+  scrollbar-thumb-sky-300
+    lg:h-[550px]
+    mx-auto
+    px-4
+    rounded-lg
+    bg-gradient-to-br
+    from-[#03045e]
+    to-[#0077b6]
+    lg:grid
+    space-y-4
+    place-items-center
+    hidden
+}
+  .apodMobile{
+    @apply
+    lg:hidden
+    max-w-5xl 
+    md:h-[470px]
+    h-[390px]
+    mx-auto
+    place-self-center
+    px-8 
+    rounded-lg
+    hover:opacity-95
+    hover:shadow-xl
+    shadow-sky-600
+    transform
+    transition
+    duration-300
+    ease-in-out
+    bg-slate-800 
+    bg-cover
+    bg-no-repeat
+    place-items-center
+    grid
+  }
+
+  .apodLg{
+    @apply
+    max-w-7xl
+    lg:h-[550px]
+    md:h-[470px]
+    h-[390px]
+    mx-auto
+    px-4
+    rounded-lg
+    hover:opacity-95
+    hover:shadow-xl
+    shadow-sky-600
+    transform
+    transition
+    duration-300
+    ease-in-out
+    bg-slate-800 
+    bg-cover
+    bg-no-repeat
+    items-center
+    lg:flex
+    hidden
+  }
+
+  .firstNewsDiv{
+    @apply
+    lg:hidden
+    border-y-2 
+    border-slate-200 
+    h-[420px]
+    w-full 
+    shadow-xl
+    shadow-slate-300
+    mx-auto
+  }
+
+  .newsMobileHome{
+    @apply
+    lg:hidden 
+    grid 
+    place-items-center
+    w-[0.5]
+    space-y-3 
+    py-3
+  }
+
+  .initNewsMobile{
+    @apply
+    flex
+    lg:hidden
+    items-center
+    md:max-h-[450px]
+    md:min-h-[420px]
+    md:max-w-[480px]
+    md:min-w-[450px]
+    w-[90%]
+     h-[360px]
+    bg-slate-800
+    bg-opacity-90
+    rounded-lg
+    shadow-lg
+    cursor-pointer
+    hover:shadow-xl
+    hover:shadow-sky-500
+    hover:scale-105
+    transform
+    transition
+    duration-300
+  }
+
+  /*mobile news div modal*/
+  .mobNewsModal{
+    @apply
+    py-7
+    mx-auto
+    h-[690px]
+    lg:w-[590px]
+    md:w-[450px]
+    w-[310px]
+    px-9
+    grid
+    place-items-center
+    space-y-3
+    overflow-y-scroll
+    scrollbar-hide
+  }
+
+  .spaceNewsMobile{
+    @apply
+    grid
+    lg:hidden
+    my-5
+    place-items-center
+    w-full
+    max-h-[110px]
+    min-h-[70px]
+    space-y-4
+    bg-center
+    bg-no-repeat
+    rounded-xl
+    shadow-md
+    cursor-pointer
+    hover:shadow-lg
+    hover:shadow-sky-400
+    hover:bg-slate-800
+    transform
+    transition
+    duration-300
+  }
+
+  .spaceNewsDesktop{
+    @apply
+    lg:flex
+    hidden
+    items-center
+    h-[480px]
+    w-full
+    my-4
+    space-x-3
+    bg-slate-900
+    bg-cover
+    bg-no-repeat
+    rounded-lg
+    shadow-md
+    cursor-pointer
+    hover:shadow-lg
+    hover:shadow-sky-400
+    transform
+    transition
+    duration-300
+  }
+
+  .displayPlanet{
+    @apply
+    lg:h-[490px]
+    md:h-[360px]
+    h-[290px]
+    w-3/4
+    mx-auto
+    bg-cover
+    bg-no-repeat
+    grid
+    place-items-center
+    space-y-4
+    rounded-full
+    cursor-pointer
+    border-2
+    border-opacity-80
+    border-indigo-300
+    hover:shadow-lg
+    hover:shadow-indigo-200
+    transform
+    transition
+    duration-300
+    ease-linear
+  }
+
+  .planetMain{
+    @apply
+    lg:max-w-7xl
+    md:max-w-5xl
+    max-w-3xl
+    mx-auto
+    h-full
+    place-items-center
+    space-y-7
+    px-5 
+    py-3
+    pb-[240px]
+    lg:overflow-hidden
+    overflow-y-scroll
+    scrollbar-hide
+    bg-gradient-to-t
+    from-sky-700
+    to-slate-900
+    opacity-90
+    rounded-lg
+  }
+
+  .resultDiv{
+    @apply
+    lg:h-1/2
+    h-full
+    lg:bg-space-lg
+    sm:bg-space-tb
+    bg-space-mb
+    bg-no-repeat
+    lg:bg-cover
+    bg-center
+    rounded-3xl
+    w-[90%]
+    mx-auto
+    grid
+    place-items-center
+  }
+
+  .planetDisplayModalDiv{
+    @apply
+    grid 
+    px-12
+    py-14
+    lg:max-h-[710px]
+    lg:min-h-[690px]
+    lg:max-w-[620px]
+    lg:min-w-[420px]
+    max-h-[450px]
+    min-h-[320px]
+    place-items-start
+    space-y-7
+    rounded-md
+    overflow-y-scroll
+    bg-center
+    bg-no-repeat
+    scrollbar-thin
+    scrollbar-track-slate-700
+    scrollbar-thumb-sky-200
+  }
+
+  .resultMid{
+    @apply
+    h-full
+    lg:w-[75%]
+    w-[85%]
+    mx-auto
+    bg-sky-600
+    bg-opacity-80
+    space-y-4
+    grid
+    place-items-center
+    rounded-lg
+  }
+
+  .searchName{
+    @apply 
+    lg:text-2xl 
+    md:text-lg 
+    text-base 
+    font-ibm-mono
+    max-w-full
+    min-w-[90px]
+    overflow-ellipsis
+    mx-auto 
+    font-semibold 
+    text-slate-100 
+  }
+
+  .cosmosTab{
+    @apply
+    h-full
+    lg:max-h-[1024px]
+    max-h-[924px]
+    min-h-[710px]
+    pb-10
+    max-w-7xl
+    mx-auto
+    overflow-y-scroll
+    scrollbar-thin
+    space-y-4
+  }
+
+  .threeDivs{
+    @apply
+    max-h-[710px]
+    min-h-[590px]
+    max-w-7xl
+    mx-auto
+    lg:flex
+    lg:items-center
+    lg:space-x-2
+    hidden
+  }
+
+  .visibleOnMob{
+    @apply
+    lg:hidden
+    bg-slate-800 
+    shadow-lg 
+    border-b 
+    border-slate-600
+    w-full
+    flex
+    place-items-center
+    justify-evenly
+    p-3
+  }
+
+  .mobileExopl{
+    @apply
+    lg:hidden    
+    max-h-[84px]
+    min-h-[64px]
+    flex
+    items-center
+    justify-evenly
+    rounded-lg
+    bg-cover
+    bg-no-repeat
+    cursor-pointer
+    shadow-lg
+    shadow-slate-700
+    hover:shadow-xl
+    hover:shadow-sky-100
+    transform
+    transition
+    ease-in-out
+    duration-300
+  }
+
+  .deskPl{
+    @apply
+    max-h-[84px]
+    min-h-[64px]
+    lg:flex
+    items-center
+    justify-evenly
+    rounded-lg
+    bg-cover
+    bg-no-repeat
+    cursor-pointer
+    shadow-lg
+    shadow-slate-700
+    hover:shadow-xl
+    hover:shadow-sky-100
+    transform
+    transition
+    ease-in-out
+    duration-300
+    hidden
+  }
+
+  .mobileExoName{
+    @apply
+    font-quicksand 
+    font-semibold 
+    text-slate-100 
+    sm:text-xl
+    text-base 
+    place-self-center
+  }
+
+  .mobileStar{
+    @apply
+    lg:hidden    
+    max-h-[84px]
+    min-h-[64px]
+    flex
+    my-3
+    items-center
+    justify-evenly
+    rounded-lg
+    bg-cover
+    bg-no-repeat
+    cursor-pointer
+    shadow-lg
+    shadow-yellow-800
+    hover:shadow-xl
+    hover:shadow-orange-100
+    transform
+    transition
+    ease-in-out
+    duration-300
+  }
+
+  .deskStar{
+    @apply
+    max-h-[84px]
+    min-h-[64px]
+    lg:flex
+    items-center
+    justify-evenly
+    rounded-lg
+    bg-cover
+    bg-no-repeat
+    cursor-pointer
+    shadow-lg
+    shadow-orange-700
+    hover:shadow-xl
+    hover:shadow-amber-100
+    transform
+    transition
+    ease-in-out
+    duration-300
+    hidden
+  }
+
+  .mobileStarName{
+    @apply
+    font-ibm-sans
+    font-light
+    underline
+    text-amber-50 
+    sm:text-xl
+    text-base 
+    place-self-center
+  }
+
+  .rocketBg{
+    @apply
+    lg:bg-rock-des
+    bg-rock-mb
+    h-screen
+    overflow-hidden
+    bg-cover
+    bg-no-repeat
+  }
+
+  .rocketMain{
+    @apply
+    h-screen
+    overflow-y-scroll
+    bg-gradient-to-t 
+    from-slate-800 
+    to-amber-700
+    opacity-80
+    xl:max-w-7xl
+    max-w-full
+    mx-auto
+    scrollbar-hide
+    pb-14
+    px-2
+    shadow-xl
+    shadow-amber-600
+  }
+
+.pDisplayData{
+  @apply
+  grid
+  max-h-[120px]
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-track-slate-800
+  scrollbar-thumb-sky-200
+  my-3
+  grid-cols-2
+  items-center
+  w-full
+  h-full
+  mx-auto
+}
+
+.leftDisplayData{
+  @apply
+  grid
+  place-items-start
+  space-y-3
+  
+}
+
+.rightDisplayData{
+  @apply
+  grid
+  place-items-end
+  space-y-3
+
+}
+
+.dataTitle{
+  @apply
+  font-robot-slab 
+  font-normal 
+  lg:text-lg
+  md:text-base
+  text-sm
+  underline
+  text-sky-200
+}
+
+.searchResModal{
+  @apply
+  grid
+  mx-auto
+  px-10
+  py-8
+  lg:max-w-[680px]
+  lg:min-w-[310px]
+  lg:min-h-[480px]
+  min-h-[260px]
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-thumb-sky-300
+  scrollbar-track-sky-900
+  place-items-start
+  space-y-3
+}
+
+.searchResHead{
+  @apply
+  font-inter
+  text-base
+  font-normal
+  text-sky-300
+  underline
+}
+
+.searchResTitle{
+  @apply
+  font-ibm-sans 
+  font-semibold 
+  lg:text-3xl
+  text-sky-200
+  place-self-center 
+  md:text-2xl
+  text-lg
+  mx-auto
+}
+
+.searchResTop{
+  @apply
+  font-ibm-sans
+  font-semibold
+  lg:text-xl
+  text-base
+  text-sky-100
+}
+
+.searchResData{
+  @apply
+  font-inter
+  font-normal 
+  lg:text-lg
+  md:text-base
+  text-sm
+  px-1
+  underline
+  text-slate-200
+}
+
+.mobileTop{
+  @apply
+  lg:hidden
+  mx-auto
+  w-[90%]
+  my-4
+  px-3
+  min-h-[450px]
+  max-h-[780px] 
+  grid
+  place-items-center
+  rounded-lg
+  shadow-md
+  hover:shadow-orange-400
+  hover:shadow-lg
+  transform
+  transition
+  duration-300
+  ease-in-out
+  bg-cover
+  bg-no-repeat
+  cursor-pointer
+}
+
+.mobileNews{
+  @apply
+  lg:hidden
+  w-full
+    max-h-[380px] 
+    flex
+    items-center
+    justify-between
+    px-3
+    rounded-lg
+    shadow-md
+    hover:shadow-orange-400
+    hover:shadow-lg
+    transform
+    transition
+    duration-300
+    ease-in-out
+    bg-gradient-to-tr
+    from-sky-800
+    to-amber-800
+    cursor-pointer
+    m-3
+}
+
+.desktopNews{
+  @apply
+  w-full 
+    max-h-[520px]
+    min-h-[490px] 
+    my-4
+    py-3
+    px-4
+    lg:grid
+    grid-cols-2
+    rounded-lg
+    shadow-md
+    hover:shadow-orange-400
+    hover:shadow-lg
+    transform
+    transition
+    duration-300
+    ease-in-out
+    hidden
+    cursor-pointer
+}
+
+.mobileNewsDiv{
+  @apply
+  lg:hidden
+  grid
+  place-items-center
+  mx-auto
+  w-[85%]
+  h-[270px]
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-track-slate-900
+  scrollbar-thumb-amber-300
+}
+
+.desktopNewsDiv{
+  @apply
+  lg:grid
+  bg-sky-800
+  space-y-5
+  hidden
+  place-items-center
+  w-full
+  h-[560px]
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-track-slate-900
+  scrollbar-thumb-amber-300
+}
+
+.desigTitle{
+  @apply
+  text-lg 
+  font-ibm-sans 
+  font-normal 
+  text-orange-500 
+  place-self-start
+}
+
+.desigVal{
+  @apply
+  text-xl 
+  p-3
+  rounded-lg
+  shadow-lg
+  shadow-orange-200
+  cursor-pointer
+  hover:bg-orange-700
+  hover:text-slate-100
+  hover:shadow-amber-300
+  hover:scale-105
+  font-ibm-sans 
+  font-semibold 
+  text-orange-100
+  transform
+  transition
+  duration-300
+  ease-out 
+}
+
+.exoTitle{
+  @apply
+  text-lg 
+  font-ibm-sans 
+  font-normal 
+  text-rose-500 
+  place-self-start
+}
+
+.exoVal{
+  @apply
+  text-xl 
+  p-3
+  rounded-lg
+  shadow-lg
+  shadow-rose-200
+  cursor-pointer
+  hover:bg-rose-700
+  hover:text-slate-100
+  hover:shadow-rose-300
+  hover:scale-105
+  font-ibm-sans 
+  font-semibold 
+  text-rose-100
+  transform
+  transition
+  duration-300
+  ease-out 
+}
+
+.spaceNMDiv{
+  @apply
+  md:max-h-[760px]
+  md:min-h-[740px]
+  md:w-[490px]
+  min-h-[620px]
+  max-h-[640px] 
+  w-[310px]
+  grid
+  place-items-start
+  space-y-4
+  px-10
+  py-12
+  bg-gradient-to-br
+  from-[#022534]
+  to-[#894329]
+  rounded-lg
+}
+
+.rocketSearchRes{
+  @apply
+  lg:h-[600px]
+ md:h-[490px]
+ px-8
+  h-[380px]
+  lg:max-w-5xl
+  lg:min-w-[820px]
+  md:max-w-3xl
+  md:min-w-[670px]
+  w-[90%]
+ rounded-lg
+ bg-opacity-80
+ flex
+ items-center
+  space-x-12
+ bg-gradient-to-tr
+ from-[#0d0745]
+ to-[#fcb886]
+  overflow-x-scroll
+  scrollbar-thin
+  scrollbar-thumb-amber-200
+  scrollbar-track-slate-600               
+}
+
+.mobileRock{
+  @apply
+  lg:hidden
+  md:h-[380px]
+  md:max-w-[560px]
+  md:min-w-[480px]
+  h-[240px]
+  min-w-[280px]
+  max-w-[310px]
+  bg-cover
+  bg-no-repeat
+  grid
+  place-items-center
+  space-y-3
+  cursor-pointer
+  hover:scale-105
+  transform
+  transition
+  rounded-t-md
+  rounded-b-lg
+  duration-300
+  ease-in-out
+  mx-auto
+}
+
+.desktopRock{
+  @apply
+  lg:grid
+  grid-cols-2
+  h-[510px]
+  max-w-[610px]
+  min-w-[580px]
+  cursor-pointer
+  shadow-md
+  hover:shadow-lg
+  hover:shadow-yellow-500
+  transform
+  transition
+  duration-300
+  ease-in-out
+  hidden
+}
+
+.rocketSearchDiv{
+  @apply
+  lg:w-[690px]
+  md:w-[490px]
+  w-[85%]
+  bg-opacity-80
+  bg-gradient-to-l
+  from-[#111a21]
+  to-[#a9081c]
+  flex
+  items-center
+  mx-6
+  px-4
+  py-3
+  rounded-lg
+}
+
+
+.spacecraftRes{
+  @apply
+  lg:h-[600px]
+  md:h-[520px]
+  px-12
+   h-[420px]
+   lg:max-w-5xl
+   lg:min-w-[820px]
+   md:max-w-3xl
+   md:min-w-[670px]
+   w-[90%]
+  rounded-lg
+  bg-opacity-80
+  flex
+  items-center
+   space-x-12
+   justify-evenly
+  bg-gradient-to-tr
+  from-sky-900
+  to-slate-900
+   overflow-x-scroll
+   scrollbar-thin
+   scrollbar-thumb-amber-200
+   scrollbar-track-slate-600   
+}
+/*spacecraft search input*/
+.spacecraftSearch{
+  @apply
+  lg:w-[690px]
+  md:w-[490px]
+  w-[85%]
+  bg-opacity-80
+  bg-gradient-to-l
+  from-slate-800
+  to-sky-900
+  flex
+  items-center
+  mx-6
+  px-4
+  py-3
+  rounded-lg
+}
+/*mobile rocket display componentt*/
+.modRockDiv{
+  @apply
+  md:h-[680px]
+  h-[390px]
+  w-full
+  bg-slate-700
+  bg-opacity-90
+  grid
+  place-items-start
+  px-10
+  py-8
+  overflow-y-scroll
+  scrollbar-hide
+}
+/*desktop rocket display component*/
+.desktopRocketDiv{
+  @apply
+  border-b-2
+  border-opacity-90 
+  border-orange-200
+  flex
+  items-center
+  h-[50px]
+  w-full
+  space-x-3
+  justify-evenly
+  rounded-xl
+  bg-slate-700
+}
+/*mobile craft component */
+.mobileCraftDisplay{
+  @apply
+  lg:hidden
+  md:max-w-[440px]
+  md:min-w-[390px]
+  min-w-[310px]
+  md:h-[520px]
+  h-[420px]
+  grid
+  place-items-end
+  bg-center
+  bg-no-repeat
+  space-y-3
+  hover:scale-105
+  hover:bg-opacity-75
+  transform
+  transition
+  duration-300
+  ease-in-out
+}
+/*desktop craft component*/
+.desktopCraftDisplay{
+  @apply
+  lg:inline-grid
+  place-items-start
+  bg-cover
+  bg-no-repeat
+  h-[510px]
+  max-w-[610px]
+  min-w-[580px]
+  cursor-pointer
+  shadow-md
+  hover:shadow-lg
+  hover:shadow-yellow-500
+  transform
+  transition
+  duration-300
+  ease-in-out
+  hidden
+}
+/*landing pad search div*/
+.landingPadSearch{
+  @apply
+  lg:w-[690px]
+  md:w-[490px]
+  w-[85%]
+  bg-opacity-80
+  bg-gradient-to-l
+  from-orange-900
+  to-emerald-800
+  flex
+  items-center
+  mx-6
+  px-4
+  py-3
+  rounded-lg
+}
+/*landing pad result div*/
+.landingPadRes{
+  @apply
+  lg:h-[600px]
+  md:h-[520px]
+  px-8
+   h-[420px]
+   lg:max-w-5xl
+   lg:min-w-[820px]
+   md:max-w-3xl
+   md:min-w-[670px] 
+   w-[90%]
+   rounded-lg
+  flex
+  items-center
+   space-x-12
+  bg-gradient-to-tr
+  bg-opacity-80
+  from-amber-900
+  to-green-900
+   overflow-x-scroll
+   scrollbar-thin
+   scrollbar-thumb-amber-200
+   scrollbar-track-slate-600   
+}
+/*Modal craft div*/
+.mobCraftDiv{
+  @apply
+  lg:hidden
+  md:max-h-[560px]
+  md:min-h-[530px]
+  max-h-[450px]
+  min-h-[420px]
+  w-[310px]
+  grid
+  place-items-center
+  py-4
+  px-5
+  space-y-4
+  overflow-hidden
+  rounded-lg
+  bg-center
+  bg-no-repeat
+}
+/*modal craft name*/
+.modCraftName{
+  @apply
+  md:text-xl
+  text-lg
+  md:w-full
+  w-1/2
+  font-robot-slab
+  font-normal
+  text-sky-100
+  underline
+}
+/*modal craft other details*/
+.modCraftDetail{
+  @apply
+  md:text-lg
+  text-base
+  md:w-full
+  w-1/2
+  font-robot-slab
+  md:font-normal
+  font-light
+  text-sky-200
+  underline
+}
+/*desktop spacecraft modal*/
+.deskModalDiv{
+  @apply
+  h-full
+  w-full
+  px-3
+  py-4
+  lg:grid
+  hidden
+  place-items-center
+  bg-gradient-to-bl
+  from-slate-600
+  to-rose-600
+  bg-opacity-70
+  overflow-y-scroll
+  scrollbar-hide
+  rounded-xl
+}
+/*desktop warning modal*/
+.deskWarning{
+  @apply
+  h-full
+  w-full
+  px-3
+  py-4
+  lg:hidden
+  bg-gradient-to-bl
+  from-slate-600
+  to-rose-600
+  bg-opacity-70
+  overflow-y-scroll
+  scrollbar-hide
+  rounded-xl
+}
+/*description div*/
+.descriptionDiv{
+  @apply
+  h-1/2 
+  w-full
+  bg-sky-700
+  overflow-y-scroll
+  px-5
+  py-4
+  mx-auto
+  font-robot-slab
+  font-normal
+  md:text-base
+  text-sm
+  text-amber-400
+  rounded-lg
+  scrollbar-thin
+  scrollbar-track-sky-500
+  scrollbar-thumb-slate-800
+}
+/*mobilde landing display div*/
+.mobPadDiv{
+  @apply
+  lg:hidden
+  md:max-w-[448px]
+  md:max-h-[590px]
+  md:min-w-[420px]
+  md:min-h-[510px]
+  max-h-[320px]
+  min-h-[300px]
+  max-w-[310px]
+  min-w-[300px]
+  rounded-lg
+  bg-sky-400
+  grid
+  place-items-center
+  hover:scale-105
+  transform
+  transition
+  duration-300
+  ease-in-out
+}
+/*mobile pad image div*/
+.mobPadImg{
+  @apply
+  hidden
+  h-full
+  w-full
+  rounded-lg
+  p-2
+  bg-cover
+  bg-no-repeat
+}
+/*mobPad location*/
+.mobPadLoc{
+  @apply
+  md:inline-flex
+  hidden
+  text-lg 
+  font-normal 
+  font-ibm-mono 
+  text-amber-500
+}
+/*mobile pad modal div*/
+.mobModalBody{
+  @apply
+  bg-gradient-to-tr
+  from-slate-800
+  to-[#d26129]
+  md:max-h-[520px]
+  md:min-h-[500px]
+  md:max-w-[448px]
+  md:min-w-[420px]
+  max-h-[420px]
+  min-h-[390px]
+  w-[310px]
+  grid
+  place-items-center
+  overflow-y-scroll
+  scrollbar-hide
+  px-8
+  py-4
+  space-y-4
+}
+/*desktop pad div*/
+.deskPadDiv{
+  @apply
+  lg:grid
+  hidden
+  max-h-[720px]
+  min-h-[690px]
+  max-w-[630px]
+  min-w-[600px]
+  place-items-center
+  px-7
+  py-4
+  bg-gradient-to-br
+  from-sky-700
+  to-[#8f3e00]
+  bg-opacity-75
+  hover:shadow-2xl
+  hover:shadow-orange-600
+  transform
+  transition
+  ease-in-out
+  duration-300
+}
+/*blog header */
+.blogHeader{
+  @apply
+  top-0
+  z-50
+  sticky
+  lg:flex 
+  items-center
+  bg-sky-800
+  justify-evenly
+  px-7
+  py-4
+  border-b-2
+  border-sky-100
+  rounded-b-xl
+  shadow-lg
+  shadow-slate-600
+  hidden
+}
+/*blog footer*/
+.blogFooter{
+  @apply
+  bottom-0
+  z-50
+  sticky
+  flex 
+  items-center
+  bg-sky-800
+  justify-evenly
+  px-7
+  py-4
+  border-b-2
+  border-sky-100
+  rounded-b-xl
+  shadow-lg
+  shadow-slate-600
+  lg:hidden
+}
+/*blog background*/
+.blogBg{
+  @apply
+  bg-gradient-to-br
+  from-[#514945]
+  to-[#355c7d]
+  h-screen
+  overflow-hidden
+  scrollbar-hide
+}
+/*blog main div*/
+.blogMain{
+  @apply
+  h-screen
+  w-full
+       mx-auto
+       rounded-lg
+       bg-cover
+       bg-no-repeat
+       bg-blog
+       
+}
+/*desktop modal div*/
+.deskModalDiv{
+  @apply
+  lg:grid 
+  grid-cols-2
+  max-h-[890px]
+  max-w-[880px]
+  min-h-[810px]
+  min-w-[790px]
+  rounded-lg
+  bg-gradient-to-t
+  from-[#671223]
+  to-[#2c077d]
+  shadow-xl
+  shadow-[#c5945f]
+  overflow-hidden
+  scrollbar-hide
+  p-3
+  hidden
+}
+/*astronaut search results div*/
+.astroRes{
+  @apply
+  lg:h-[600px]
+  md:h-[520px]
+  px-8
+   h-[420px]
+   lg:max-w-5xl
+   lg:min-w-[820px]
+   md:max-w-3xl
+   md:min-w-[670px] 
+   w-[90%]
+   rounded-lg
+  flex
+  items-center
+   space-x-12
+  bg-gradient-to-tr
+  bg-opacity-70
+  from-orange-200
+  to-red-300
+   overflow-x-scroll
+   scrollbar-thin
+   scrollbar-thumb-red-200
+   scrollbar-track-slate-600
+}
+/*astroSearchInp*/
+.astroSearchInp{
+  @apply
+  lg:w-[690px]
+  md:w-[490px]
+  w-[85%]
+  bg-opacity-80
+  bg-gradient-to-l
+  from-slate-800
+  to-orange-200
+  flex
+  items-center
+  mx-6
+  px-4
+  py-3
+  rounded-lg 
+}
+/*mobile astro display div*/
+.mobAstroDiv{
+  @apply
+  lg:hidden
+  md:h-[480px]
+  h-[360px]
+  md:max-w-[320px]
+  md:min-w-[300px]
+  max-w-[290px]
+  min-w-[270px]
+  rounded-lg
+  bg-center
+  bg-no-repeat
+  hover:bg-cover
+  hover:shadow-lg
+  hover:shadow-red-600
+  transform
+  transition
+  ease-in-out
+  duration-700
+  cursor-pointer
+  grid
+    place-items-center
+    px-3
+    py-4
+}
+/*astronaut modal info*/
+.astroModalDiv{
+  @apply
+  md:max-h-[520px]
+  md:max-w-[490px]
+  md:min-h-[500px]
+  md:min-w-[470px]
+  max-h-[380px]
+  max-w-[310px]
+  min-h-[360px]
+  min-w-[290px]
+  overflow-y-scroll
+  scrollbar-hide
+  bg-cover
+  bg-no-repeat
+  grid
+  py-4
+  px-3
+  rounded-lg
+  place-items-center
+  space-y-4
+  bg-opacity-80
+}
+/*astronaut modal profile pic*/
+.astroModalPic{
+  @apply
+  bg-cover
+  bg-no-repeat
+  md:h-[300px]
+  md:w-[240px]
+  h-[200px]
+  w-[160px]
+  rounded-lg
+  mx-auto
+  px-4
+  py-3
+}
+/*desktop astronaut display div*/
+.deskAstroDiv{
+  @apply
+  lg:grid
+  grid-cols-2
+  items-center
+  max-h-[580px]
+  min-h-[560px]
+  max-w-[640px]
+  min-w-[620px]
+  rounded-lg
+  bg-slate-600
+  bg-opacity-80
+  px-5
+  py-3
+  hover:opacity-90
+  hover:shadow-lg
+  hover:shadow-red-200
+  transform
+  transition
+  duration-200
+  ease-in-out
+  hidden
+  cursor-pointer
+}
+
+/*mobile agency div */
+.mobAgency{
+  @apply
+  lg:hidden
+  md:max-w-[490px]
+  md:min-w-[448px]
+  md:max-h-[520px]
+  md:min-h-[480px]
+  max-h-[480px]
+  min-h-[450px]
+  max-w-[90%]
+  min-w-[80%]
+  flex
+  flex-col
+  mx-auto
+  my-4
+  space-y-3
+  place-items-center
+  rounded-lg
+  bg-gradient-to-br
+  from-[#462446]
+  to-[#b05f6d]
+  hover:opacity-90
+  hover:shadow-lg
+  hover:shadow-orange-500
+  transform
+  transition
+  duration-300
+  ease-in-out
+}
+/*desktop agency div*/
+.deskAgency{
+  @apply
+  max-h-[810px]
+  min-h-[720px]
+  w-[540px]
+  rounded-lg
+  my-5
+  py-3
+  mx-auto
+  bg-gradient-to-br
+  from-[#462446]
+  to-[#b05f6d]
+  lg:flex
+  flex-col
+  space-y-1
+  place-items-center
+  hover:bg-opacity-90
+  hover:shadow-lg
+  hover:shadow-orange-600
+  transform
+  transition
+  duration-300
+  ease-in-out
+  hidden
+}
+/*mobile info modal div*/
+.mobModal{
+  @apply
+  md:h-[520px]
+  md:w-[448px]
+  h-[390px]
+  w-[310px]
+  grid
+  place-items-start
+  px-4
+  py-3
+  space-y-4
+  bg-gradient-to-tr
+  from-emerald-500
+  to-orange-600
+  overflow-y-scroll
+  scrollbar-hide
+  bg-no-repeat
+  bg-cover
+}
+/*launch tab pane css*/
+.launchTabPane{
+  @apply
+  lg:max-h-[1024px]
+                    lg:min-h-[900px]
+                    max-h-[840px]
+                    min-h-[716px]
+                    w-full
+                    rounded-lg
+                    overflow-y-scroll
+                    scrollbar-thin
+                    scrollbar-track-[#462664]
+                    scrollbar-thumb-[#b05f6d]
+                    lg:grid
+                    lg:grid-cols-3
+                    flex
+                    items-center
+                    space-x-7
+                    px-3
+                    py-4
+                    bg-gradient-to-br
+                    from-[#708f96]
+                    to-[#e0d8cc]
+}
+/*mobile launches div*/
+.mobLaunchSuccess{
+  @apply
+  lg:hidden
+  md:h-[480px]
+  h-[360px]
+  md:max-w-[320px]
+  md:min-w-[300px]
+  max-w-[290px]
+  min-w-[270px]
+  rounded-lg
+  bg-gradient-to-br
+  from-emerald-700
+  to-amber-200
+  hover:shadow-lg
+  hover:shadow-slate-900
+  transform
+  transition
+  ease-in-out
+  duration-700
+  cursor-pointer
+  flex
+  flex-col
+    place-items-center
+}
+.mobLaunchFailure{
+  @apply
+  lg:hidden
+  md:h-[480px]
+  h-[360px]
+  md:max-w-[320px]
+  md:min-w-[300px]
+  max-w-[290px]
+  min-w-[270px]
+  rounded-lg
+bg-gradient-to-br
+from-slate-700
+to-red-500
+  hover:shadow-lg
+  hover:shadow-slate-900
+  transform
+  transition
+  ease-in-out
+  duration-700
+  cursor-pointer
+  flex
+  flex-col
+    place-items-center
+}
+/*modal launch div*/
+.launchModalDiv{
+  @apply
+  md:max-h-[490px]
+  md:min-h-[420px]
+  md:max-w-[448px]
+  md:min-w-[400px]
+  max-h-[420px]
+  min-h-[350px]
+  max-w-[310px]
+  min-w-[300px]
+  grid
+  place-items-start
+  px-4
+  py-3
+  space-y-4
+  bg-gradient-to-tr
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-track-slate-800
+  scrollbar-thumb-emerald-200
+  rounded-lg
+}
+/*desktop launch div*/
+.deskLaunch{
+  @apply
+  lg:grid
+  h-[680px]
+  w-[640px]
+  place-items-center
+  bg-cover
+  bg-no-repeat
+  hidden
+}
+/*div within desktop launch*/
+.launchDiv{
+  @apply
+  h-[100%]
+  w-[60%]
+  grid
+  place-items-start
+  space-y-4
+  px-3
+  py-2
+  bg-opacity-80
+  bg-slate-600
+  group-hover:bg-sky-600
+  group-hover:w-[75%]
+  group-hover:shadow-lg
+  group-hover:shadow-slate-700
+  transform
+  transition
+  duration-300
+  ease-in-out
+}
+/*desktop form for blog*/
+.deskForm{
+  @apply
+  max-h-[480px]
+  min-h-[290px]
+  mx-auto
+  w-[70%]
+  py-3
+  px-4
+  m-2
+  lg:grid
+  place-items-center
+  place-self-center
+  bg-sky-900
+  rounded-lg
+  hidden
+}
+/*blog form modal div*/
+.blogModDiv{
+  @apply
+  rounded-lg
+  md:max-h-[520px]
+  md:min-h-[480px]
+  md:max-w-[448px]
+  md:min-w-[400px]
+  h-[440px]
+  overflow-y-scroll
+  scrollbar-thin
+  scrollbar-track-slate-600
+  scrollbar-thumb-amber-400
+  w-full
+  flex
+  flex-col
+  place-items-start
+  bg-gradient-to-br
+  from-slate-800
+  to-sky-700
+  space-y-4
+  px-4
+  py-3
+}
+/*Div with main section of the blog*/
+.blogMainDiv{
+  @apply
+  h-[90%]
+          lg:w-[70%]
+          w-[80%]
+          rounded-lg
+          grid
+          mx-auto
+          place-items-center
+          space-y-40
+          overflow-y-scroll
+       scrollbar-hide
+       bg-slate-700
+       bg-opacity-80
+       pb-[500px]
+}
+/*article main div for mobile*/
+.mobArticle{
+  @apply
+  w-[95%]
+  mx-auto
+ md:h-[490px]
+  h-[360px]
+  flex
+  flex-col
+  bg-gradient-to-tl
+  from-[#5790ab]
+  to-[#064469]
+  border-y-2
+  my-5
+  border-y-sky-300
+  border-x
+  border-x-slate-600
+  rounded-lg
+  hover:shadow-slate-800
+  hover:shadow-lg
+  transform
+  transition
+  duration-300
+  ease-in-out
+  cursor-pointer
+  lg:hidden
+}
+/*mobile search form for articles*/
+.searchModal{
+  @apply
+  bg-sky-700
+  bg-opacity-70
+  md:h-[540px]
+  h-[450px]
+  md:max-w-[490px]
+  md:min-w-[420px]
+  w-[310px]
+ flex
+ flex-col
+ px-3
+ py-5
+ space-y-3
+}
+/*search results*/
+.searchResult{
+  @apply
+  bg-sky-700
+  border-y-2
+  border-slate-200
+  rounded-lg
+  px-2
+  py-3
+  bg-opacity-80
+  w-full
+  h-[70px]
+  flex
+  items-center
+  justify-evenly
+  space-y-1
+  hover:shadow-slate-900
+  hover:shadow-lg
+  transform
+  transition
+  duration-300
+  cursor-pointer
+}
+/*meant for desktop post*/
+.desktopPost{
+  @apply
+  my-20
+  lg:flex
+  lg:flex-col
+  px-5
+  py-3
+  max-h-[490px]
+  min-h-[360px]
+  w-[90%]
+  mx-auto
+  space-y-3
+  rounded-lg
+  bg-gradient-to-br
+  from-sky-800
+  to-slate-700
+  bg-opacity-75
+  hidden
+}
+/*blog search header*/
+.blogSearchArt{
+  @apply
+  lg:flex
+  items-center
+  justify-between
+  bg-gradient-to-r
+  from-sky-800
+  to-slate-800
+  shadow-lg
+  px-4
+  top-0
+  z-50
+  sticky
+  hidden
+}
+/*mobile article within index file*/
+.mobIndArticle{
+  @apply
+  lg:hidden
+  md:h-[460px]
+  h-[380px]
+  md:max-w-[448px]
+  md:min-w-[430px]
+  max-w-[310px]
+  min-w-[300px]
+  bg-placeholder
+  bg-no-repeat
+  bg-cover
+  rounded-lg
+  hover:shadow-lg
+  hover:shadow-slate-700
+  transform
+  transition
+  duration-300
+  ease-in-out
+  cursor-pointer
+}
+/*blog feed*/
+.blogMidDiv{
+  @apply
+  justify-items-center
+  bg-slate-600
+  lg:w-[60%]
+  md:w-[80%]
+  w-[90%]
+  mx-auto
+  h-full
+  px-3
+  py-4
+  bg-opacity-80
+  border-x-2
+  border-amber-600
+  overflow-hidden
+}
+/*desktop index article*/
+.desktopIndArticle{
+  @apply
+  lg:grid
+  max-h-[95%]
+  min-h-[85%]
+  max-w-[560px]
+  min-w-[540px]
+  place-items-center
+  rounded-xl
+  cursor-default
+  hover:shadow-xl
+  shadow-sky-700
+  transform
+  transition
+  duration-300
+  ease-in-out
+  hidden
+}
+/*blog form*/
+.addBlogForm{
+  @apply
+  max-h-[520px]
+  min-h-[500px]
+  md:max-h-[640px]
+  md:min-h-[600px]
+  lg:max-h-[720px]
+  lg:min-h-[700px]
+  max-w-[310px]
+  min-w-[280px]
+  md:max-w-[448px]
+  md:min-w-[420px]
+  lg:max-w-[640px]
+  lg:min-w-[600px]
+  grid
+  place-items-center
+  bg-gradient-to-br
+  from-sky-700
+  to-slate-800
+  rounded-lg
+  space-y-5
+  lg:overflow-hidden
+  overflow-y-scroll
+  scrollbar-hide
+}
+/*desktop post edit modal*/
+.desktopPostEdit{
+  @apply
+  h-[480px]
+  lg:max-w-[620px]
+  lg:min-w-[600px]
+  md:max-w-[448px]
+  md:min-w-[420px]
+          max-w-[310px]
+          min-w-[280px]
+          flex
+          flex-col
+          py-2
+          space-y-3
+          place-items-center
+          bg-sky-700
+          rounded-lg
+}
+/*desktop post edit title details*/
+.desktopPostEditTitle{
+  @apply
+  place-self-start
+  px-4
+  py-3
+  font-robot-slab
+  font-normal
+  text-lg
+  text-slate-50
+}
+}
