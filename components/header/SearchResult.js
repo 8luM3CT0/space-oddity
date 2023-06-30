@@ -36,6 +36,7 @@ function SearchResult ({ hit }) {
       text-xl
     text-sky-300
     underline
+    overflow-ellipsis
     shadow-b-2
     shadow-slate-700
       '
@@ -88,7 +89,7 @@ function SearchResult ({ hit }) {
             Edit
           </Button>
           <Button
-            onClick={() => router.push(`/article/${id}`)}
+            onClick={() => router.push(`/article/${hit?._firestore_id}`)}
             size='regular'
             buttonType='outline'
             block={true}

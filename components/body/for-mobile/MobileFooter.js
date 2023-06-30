@@ -573,7 +573,7 @@ function MobileFooter (queryText) {
             h-[95%]
             overflow-y-scroll
             scrollbar-hide
-            space-y-5
+            space-y-12
             w-full
             rounded-lg
             bg-slate-800
